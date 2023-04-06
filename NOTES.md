@@ -6,6 +6,9 @@
 > select company, product_name, zip_code from consumer_complaints where consumer_complaints.zip_code like '__4__'
 > select company, product_name, zip_code from consumer_complaints where consumer_complaints.zip_code not like '__4__'
 
+> alter table console_games add column  global_sales float8;
+
+> update console_games set global_sales = na_sales + eu_sales +  jp_sales + other_sales;
 
 
 
