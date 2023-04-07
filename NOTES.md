@@ -10,5 +10,12 @@
 
 > update console_games set global_sales = na_sales + eu_sales +  jp_sales + other_sales;
 
+> select game_name, length(game_name) from console_games;
+> select publisher, left(publisher, 4) from console_games; 
+> select publisher, right(publisher, 4) from console_games;
+
+> select publisher, reverse(publisher) from console_games;
+
+> left and right function dies not exist in hive
 
 
