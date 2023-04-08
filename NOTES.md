@@ -18,4 +18,12 @@
 
 > left and right function dies not exist in hive
 
+> select * , date_part('year', discontinued) - date_part('year', first_retail_availability) as years_existed from console_dates order by years_existed;
+
+date_part not exist in hive
+
+> select age(discontinued, first_retail_availability) from console_dates
+
+> age function only in postgres
+
 
