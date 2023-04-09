@@ -26,4 +26,54 @@ date_part not exist in hive
 
 > age function only in postgres
 
+> select cast(game_year as varchar(4)) from console_games order by game_year;
+> select game_year::varchar(4) from console_games order by game_year;
+
+hive also have to_date function
+
+
+## nulls
+
+
+> null isn't = anything(include null)
+
+
+## Relational keys
+
++ Superkey: is any combination of columns that uniquely identifies a row in a table
++ Candidate key is a superkey such that no proper subset is a superkey, and has thw following two properties: 
+  + Uniqueness
+  + Irreducibility
++ Primary key: is the candidate key that is selected to identify tuples uniquely withing the relation:
+  + If a relation has serveral candidate keys only one is chosen to be the primary key
++ Foreign keys
+  + is an attribute or set of attributes,within one relation that matches the candidate key of some other relation
+
+
+## What is a relational database
+
++ Relational database is a set of tables that satify following data integrity:
+  + Entity integrity
+  + Domain integrity
+  + Referential integrity
+  + User-Defined integrity
+
+
+# Joints
+
+## Type of Joins
+
++ Inner Join
++ Left Join(Left outer Join)
++ Right Join
++ Full Outer Join
++ Cross Join
+
+
+## Duplictes in joins
+
+## Join on multiple fields
+
+
+
 
